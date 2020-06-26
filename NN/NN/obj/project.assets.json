@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\Shared Drive\\NN\\NN\\NN.csproj",
+      "projectUniqueName": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\NN\\NN\\NN.csproj",
       "projectName": "NN",
-      "projectPath": "J:\\Shared Drive\\NN\\NN\\NN.csproj",
+      "projectPath": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\NN\\NN\\NN.csproj",
       "packagesPath": "C:\\Users\\laist\\.nuget\\packages\\",
-      "outputPath": "J:\\Shared Drive\\NN\\NN\\obj\\",
+      "outputPath": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\NN\\NN\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -48,21 +48,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

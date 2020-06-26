@@ -26,17 +26,18 @@ namespace NN
 
             weights_ih = new Matrix(hnodes, inodes);
             weights_ho = new Matrix(onodes, hnodes);
-
             weights_ih.Randomize();
             weights_ho.Randomize();
 
             bias_h = new Matrix(hnodes, 1);
-            bias_o = new Matrix(hnodes, 1);
+            bias_o = new Matrix(onodes, 1);
+            bias_h.Randomize();
+            bias_o.Randomize();
 
             learning_rate = 0.1;
         }
 
-        public double[] Feedforward(double[,] input_array)
+        public double[] Feedforward(double[] input_array)
         {
             Matrix inputOuputs = Matrix.FromArray(input_array);
 
@@ -53,58 +54,43 @@ namespace NN
 
         public void Train(Matrix inputs, Matrix targets)
         {
-            // Feedforward
-            Matrix inputOuputs = inputs;
+            Matrix hidden = Matrix.Multiply(weights_ih, inputs);
+            hidden.Add(bias_h);
+            hidden.Map(Matrix.Sigmoid);
 
-            Matrix hiddenOuputs = Matrix.Multiply(weights_ih, inputOuputs);
-            hiddenOuputs = Matrix.Add(hiddenOuputs, bias_h);
-            Matrix.Map(ref hiddenOuputs, Matrix.Sigmoid);
+            Matrix outputs = Matrix.Multiply(weights_ho, hidden);
+            outputs.Add(bias_o);
+            outputs.Map(Matrix.Sigmoid);
 
-            Matrix finalOutputs = Matrix.Multiply(weights_ho, hiddenOuputs);
-            finalOutputs = Matrix.Add(finalOutputs, bias_o);
-            Matrix.Map(ref finalOutputs, Matrix.Sigmoid);
 
-            //
-
-            double[] outputs = finalOutputs.ToArray();
-            double[] error = new double[outputs.Length];
+            Matrix output_errors = Matrix.Subtract(targets, outputs);
             
-            for (int i = 0; i < outputs.Length; i++)
-            {
-                error[i] = targets.data[i,0] - outputs[i];
-            }
-
-            Matrix gradients = Matrix.FromArray(outputs);
-            Matrix.Map(ref gradients, flip); // desigmoid but sigmoid has already been sigmoided
-            gradients = Matrix.Multiply(gradients, Matrix.FromArray(error));
+            Matrix gradients = outputs;
+            Matrix.Map(ref gradients, flip);
+            gradients = Matrix.Multiply(gradients, output_errors);
             gradients = Matrix.Multiply(gradients, learning_rate);
 
-
-            Matrix hiddenT = Matrix.Transpose(hiddenOuputs);
-            Matrix weights_ho_deltas = Matrix.Multiply(gradients, hiddenT);
-
-            Matrix.Add(weights_ho, weights_ho_deltas);
+            Matrix hidden_T = Matrix.Transpose(hidden);
+            Matrix weight_ho_deltas = Matrix.Multiply(gradients, hidden_T);
+            
+            weights_ho.Add(weight_ho_deltas);
+            bias_o.Add(gradients); 
 
             Matrix who_t = Matrix.Transpose(weights_ho);
-            Matrix hidden_errors = Matrix.Multiply(who_t, Matrix.FromArray(error));
+            Matrix hidden_errors = Matrix.Multiply(who_t, output_errors);
+            
+            Matrix hidden_gradient = hidden;
+            Matrix.Map(ref hidden_gradient, flip);
+            hidden_gradient = Matrix.Multiply(hidden_gradient, hidden_errors);
+            hidden_gradient = Matrix.Multiply(hidden_gradient, learning_rate);
+            
+            Matrix inputs_T = Matrix.Transpose(inputs);
+            Matrix weights_ih_deltas = Matrix.Multiply(hidden_gradient, inputs_T);
+            
+            weights_ih.Add(weights_ih_deltas);
+            bias_h.Add(hidden_gradient);
 
-            Matrix hidden_gradients = hiddenOuputs;
-            Matrix.Map(ref hidden_gradients, flip);
-
-            hidden_gradients = Matrix.Multiply(hidden_gradients, hidden_errors);
-            hidden_gradients = Matrix.Multiply(hidden_gradients, learning_rate);
-
-            Matrix inputsT = Matrix.Transpose(inputs);
-            Matrix weights_ih_deltas = Matrix.Multiply(hidden_gradients, inputsT);
-
-            Matrix.Add(weights_ih, weights_ih_deltas);
-
-            //Working
-
-            Console.WriteLine($"{bias_o.sizeX} by {bias_o.sizeY} add {gradients.sizeX} by {gradients.sizeY}");
-
-            //bias_o = Matrix.Add(bias_o, gradients);
-            //bias_h = Matrix.Add(bias_h, hidden_gradients);
+            //Console.WriteLine("Done!");
         }
 
         private double flip(double i)

@@ -80,10 +80,54 @@ namespace NN
             return a;
         }
 
+
         public static Matrix Multiply(Matrix a, Matrix b)
         {
+            Matrix result;
+            if (a.sizeX == b.sizeX && a.sizeY == b.sizeY)
+            {
+                result = new Matrix(a.sizeX, a.sizeY);
+                //Scalar
+                for (int x = 0; x < a.sizeX; x++)
+                {
+                    for (int y = 0; y < a.sizeY; y++)
+                    {
+                        result.data[x, y] = a.data[x, y] * b.data[x, y];
+                    }
+                }
+            }
+            else
+            {
+                // Dot product
+                result = new Matrix(a.sizeX, b.sizeY); //Square ofc
+                                                              //Console.WriteLine($"Making {a.sizeX} by {b.sizeY}");
+                for (int i = 0; i < result.sizeX; i++)
+                {
+                    for (int j = 0; j < b.sizeY; j++)
+                    {
+                        double sum = 0;
+                        for (int k = 0; k < b.sizeX; k++)
+                        {
+                            try
+                            {
+                                sum += a.data[i, k] * b.data[k, j];
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Error! Trying to multiple invalid matrixes... {a.sizeX} by {a.sizeY}, {a.sizeX} by {b.sizeY}");
+                                return new Matrix(a.sizeX, a.sizeX);
+                            }
+                        }
+                        result.data[i, j] = sum;
+                    }
+                }
+            }
+            return result;
+        }
 
-            Matrix result = new Matrix(a.sizeX, b.sizeY); //Square ofc
+        public void Multiply(Matrix b)
+        {
+            Matrix result = new Matrix(b.sizeY, b.sizeY); //Square ofc
             //Console.WriteLine($"Making {a.sizeX} by {b.sizeY}");
             for (int i = 0; i < result.sizeX; i++)
             {
@@ -94,18 +138,42 @@ namespace NN
                     {
                         try
                         {
-                            sum += a.data[i, k] * b.data[k, j];
+                            sum += data[i, k] * b.data[k, j];
                         }
                         catch (Exception ex)
                         {
-                            //Console.WriteLine($"Error! Trying to multiple invalid matrixes... {a.sizeX}, {b.sizeY}");
-                            return new Matrix(a.sizeX, a.sizeX);
+                            Console.WriteLine($"Error! Trying to multiple invalid matrixes... {data.GetLength(0)} by {data.GetLength(1)}, {b.sizeX} by {b.sizeY}");
+                            
                         }
                     }
                     result.data[i, j] = sum;
                 }
             }
-            return result;
+            data = result.data;
+            sizeX = result.sizeX;
+            sizeY = result.sizeY;
+        }
+
+        public void Add(Matrix b)
+        {
+            for (int x = 0; x < sizeX; x++)
+            {
+                for (int y = 0; y < sizeY; y++)
+                {
+                    data[x, y] += b.data[x, y];
+                }
+            }
+        }
+
+        public void Subtract(Matrix b)
+        {
+            for (int x = 0; x < sizeX; x++)
+            {
+                for (int y = 0; y < sizeY; y++)
+                {
+                    data[x, y] -= b.data[x, y];
+                }
+            }
         }
 
         public static void PrintMatrix(Matrix a)
@@ -117,6 +185,14 @@ namespace NN
                     Console.Write(string.Format(",{0} ", a.data[i, j]));
                 }
                 Console.Write(Environment.NewLine + Environment.NewLine);
+            }
+        }
+
+        public static void PrintArray(double[] a)
+        {
+            foreach (var item in a)
+            {
+                Console.Write($"{item}, ");
             }
         }
 
@@ -167,6 +243,23 @@ namespace NN
             return result;
         }
 
+        public static Matrix Subtract(Matrix a, Matrix b)
+        {
+            if (a.sizeX != b.sizeX || a.sizeY != b.sizeY) Console.WriteLine("Attempting to add incorrect matrix's...");
+
+            Matrix result = new Matrix(a.sizeX, a.sizeY);
+
+            for (int x = 0; x < a.sizeX; x++)
+            {
+                for (int y = 0; y < a.sizeY; y++)
+                {
+                    result.data[x, y] = a.data[x, y] - b.data[x, y];
+                }
+            }
+
+            return result;
+        }
+
         public static Matrix Add(Matrix a, Matrix b)
         {
             if (a.sizeX != b.sizeX || a.sizeY != b.sizeY) Console.WriteLine("Attempting to add incorrect matrix's...");
@@ -195,6 +288,17 @@ namespace NN
             }
         }
 
-        
+        public void Map(Func<double, double> func)
+        {
+            for (int i = 0; i < sizeX; i++)
+            {
+                for (int j = 0; j < sizeY; j++)
+                {
+                    data[i, j] = func(data[i, j]);
+                }
+            }
+        }
+
+
     }
 }
