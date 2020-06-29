@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj",
+      "projectUniqueName": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN - Print Off/NN/NN.csproj",
       "projectName": "NN",
-      "projectPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj",
+      "projectPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN - Print Off/NN/NN.csproj",
       "packagesPath": "/Users/samlaister/.nuget/packages/",
-      "outputPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/",
+      "outputPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN - Print Off/NN/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/samlaister/.config/NuGet/NuGet.Config"
