@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9A6BD75A-1279-4483-A7A5-B032701A523D}|Default">
+  <MonoDevelop.Ide.ItemProperties.NN PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NN/Program.cs">
+    <Files>
+      <File FileName="NN/Program.cs" Line="23" Column="14" />
+      <File FileName="NN/NeuralNetwork.cs" Line="14" Column="1" />
+      <File FileName="NN/Matrix.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NN" expanded="True">
+            <Node name="NN" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
