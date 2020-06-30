@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WBcwghacLwP+Xv19APk7P8XcD8LZcVKfBDtDf0nLfSqjGPn8zrLHAw8PavN9PmEM/MJVAOcARawGJshqspjz3Q==",
+  "dgSpecHash": "8A5+tTWFb3k3A75KHdhLMQEpnjA0yWM6JV64E6ca4/kEBPOI+025/Su4aojz2NUbXbvZZiI8yvJ+dJRPsOut1w==",
   "success": true,
-  "projectFilePath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj",
+  "projectFilePath": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\NN.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

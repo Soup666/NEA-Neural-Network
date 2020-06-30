@@ -48,3 +48,16 @@ C:/Users/laist/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/Debug/netcoreapp3.1
 /Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/Debug/netcoreapp3.1/NN.dll
 /Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/Debug/netcoreapp3.1/NN.pdb
 /Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/Debug/netcoreapp3.1/NN.genruntimeconfig.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.csprojAssemblyReference.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.AssemblyInfoInputs.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.AssemblyInfo.cs
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.csproj.CoreCompileInputs.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.deps.json
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.runtimeconfig.json
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.runtimeconfig.dev.json
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\bin\Debug\netcoreapp3.1\NN.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\NN\obj\Debug\netcoreapp3.1\NN.genruntimeconfig.cache

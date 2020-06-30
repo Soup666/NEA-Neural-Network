@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj": {}
+    "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\NN.csproj": {}
   },
   "projects": {
-    "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj": {
+    "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\NN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj",
+        "projectUniqueName": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\NN.csproj",
         "projectName": "NN",
-        "projectPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/NN.csproj",
-        "packagesPath": "/Users/samlaister/.nuget/packages/",
-        "outputPath": "/Users/samlaister/Documents/GitHub/NEA-Neural-Network/NN/NN/obj/",
+        "projectPath": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\NN.csproj",
+        "packagesPath": "C:\\Users\\laist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laist\\Documents\\GitHub\\NEA-Neural-Network\\MNIST\\NN\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/samlaister/.config/NuGet/NuGet.Config"
+          "C:\\Users\\laist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
