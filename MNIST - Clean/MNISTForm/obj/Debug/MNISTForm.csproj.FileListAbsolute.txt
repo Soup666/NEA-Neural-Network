@@ -1,0 +1,42 @@
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.Form1.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.Properties.Resources.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.csproj.GenerateResource.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.csproj.CoreCompileInputs.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\MNISTForm.exe.config
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\MNIST.IO.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.csproj.CopyComplete
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNISTForm\MNISTForm\obj\Debug\MNISTForm.csprojAssemblyReference.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.csprojAssemblyReference.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.Form1.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.Properties.Resources.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.csproj.GenerateResource.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.csproj.CoreCompileInputs.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\MNISTForm.exe.config
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\MNIST.IO.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST\MNISTForm\obj\Debug\MNISTForm.csproj.CopyComplete
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\MNISTForm.exe.config
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\MNIST.IO.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.csprojAssemblyReference.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.Form1.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.Properties.Resources.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.csproj.GenerateResource.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.csproj.CoreCompileInputs.cache
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.csproj.CopyComplete
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.exe
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.pdb
