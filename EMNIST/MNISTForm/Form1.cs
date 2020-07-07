@@ -17,7 +17,7 @@ namespace MNISTForm
     public partial class Form1 : Form
     {
 
-        NeuralNetwork nn = new NeuralNetwork(784, 16, 27);
+        NeuralNetwork nn = new NeuralNetwork(784, 64, 26);
         public bool isTraining = true;
 
         char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
@@ -54,7 +54,7 @@ namespace MNISTForm
         {
             if (!start) return;
 
-            int trainingAmount = 60000;
+            int trainingAmount = 30000;
 
             float scalar = 5.0f;
             panel1.Width = 28 * int.Parse(scalar.ToString());
@@ -68,7 +68,7 @@ namespace MNISTForm
                     int count = 0;
 
                     double[] sendingData = new double[784];
-                    double[] sendingResult = new double[27];
+                    double[] sendingResult = new double[26];
 
                     for (int i = 0; i < sendingResult.Length; i++)
                     {
@@ -88,7 +88,7 @@ namespace MNISTForm
 
                         label1.Text = $"Answer: {alphabet[item.Label - 1]}";
                         label1.Refresh();
-                        sendingResult[item.Label] = 1;
+                        sendingResult[item.Label-1] = 1;
                         //Console.WriteLine(alphabet[item.Label-1]);
 
                         int ind = 0;
@@ -165,7 +165,7 @@ namespace MNISTForm
                     }
                 }
                 Console.WriteLine("======");
-                label2.Text = $"Guess is {alphabet[winner-1]}";
+                label2.Text = $"Guess is {alphabet[winner]}";
 
                 time = 0;
                 button1.Enabled = false ;
