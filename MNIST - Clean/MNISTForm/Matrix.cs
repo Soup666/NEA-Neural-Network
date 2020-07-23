@@ -112,7 +112,7 @@ namespace MNISTForm
                             {
                                 sum += a.data[i, k] * b.data[k, j];
                             }
-                            catch (Exception ex)
+                            catch (Exception )
                             {
                                 Console.WriteLine($"Error! Trying to multiple invalid matrixes... {a.sizeX} by {a.sizeY}, {a.sizeX} by {b.sizeY}");
                                 return new Matrix(a.sizeX, a.sizeX);
@@ -140,7 +140,7 @@ namespace MNISTForm
                         {
                             sum += data[i, k] * b.data[k, j];
                         }
-                        catch (Exception ex)
+                        catch (Exception )
                         {
                             Console.WriteLine($"Error! Trying to multiple invalid matrixes... {data.GetLength(0)} by {data.GetLength(1)}, {b.sizeX} by {b.sizeY}");
                             
@@ -245,7 +245,7 @@ namespace MNISTForm
 
         public static Matrix Subtract(Matrix a, Matrix b)
         {
-            if (a.sizeX != b.sizeX || a.sizeY != b.sizeY) Console.WriteLine("Attempting to add incorrect matrix's...");
+            if (a.sizeX != b.sizeX || a.sizeY != b.sizeY) Console.WriteLine("Attempting to sub incorrect matrix's...");
 
             Matrix result = new Matrix(a.sizeX, a.sizeY);
 

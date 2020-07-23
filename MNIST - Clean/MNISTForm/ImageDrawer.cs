@@ -11,7 +11,7 @@ namespace MNISTForm
     public class ImageDrawer
     {
 
-        public void DrawFrame(double[,] data, PaintEventArgs e, int scalar)
+        public void DrawFrame(double[,] data, PaintEventArgs e, int scalar, bool emnist)
         {
             for (int x = 0; x < data.GetLength(0); x++)
             {
@@ -20,7 +20,8 @@ namespace MNISTForm
                     byte c = (byte)data[x, y];
 
                     SolidBrush s = new SolidBrush(Color.FromArgb(255, c, c, c));
-                    e.Graphics.FillRectangle(s, x * scalar, y * scalar, 1 * scalar, 1 * scalar);
+                    if (emnist) e.Graphics.FillRectangle(s, y * scalar, x * scalar, 1 * scalar, 1 * scalar);
+                    else e.Graphics.FillRectangle(s, x * scalar, y * scalar, 1 * scalar, 1 * scalar);
                 }
             }
         }

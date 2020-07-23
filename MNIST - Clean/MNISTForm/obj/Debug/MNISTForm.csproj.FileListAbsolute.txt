@@ -40,3 +40,6 @@ C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\D
 C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.csproj.CopyComplete
 C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.exe
 C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.pdb
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\obj\Debug\MNISTForm.Draw.resources
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\laist\Documents\GitHub\NEA-Neural-Network\MNIST - Clean\MNISTForm\bin\Debug\Newtonsoft.Json.xml

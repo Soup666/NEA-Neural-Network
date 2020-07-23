@@ -34,10 +34,23 @@ namespace MNISTForm
 
     public static class MNISTReader
     {
-        private const string TrainImages = "mnist/train-images.idx3-ubyte";
-        private const string TrainLabels = "mnist/train-labels.idx1-ubyte";
-        private const string TestImages = "mnist/t10k-images.idx3-ubyte";
-        private const string TestLabels = "mnist/t10k-labels.idx1-ubyte";
+        private static string TrainImages = "";
+        private static string TrainLabels = "";
+        private static string TestImages = "";
+        private static string TestLabels = "";
+        /*
+        private static string TrainImages = "mnist/train-images.idx3-ubyte";
+        private static string TrainLabels = "mnist/train-labels.idx1-ubyte";
+        private static string TestImages = "mnist/t10k-images.idx3-ubyte";
+        private static string TestLabels = "mnist/t10k-labels.idx1-ubyte";*/
+
+        public static void SetType(string TrainImages_, string TrainLabels_, string TestImages_, string TestLabels_)
+        {
+            TrainImages = TrainImages_;
+            TrainLabels = TrainLabels_;
+            TestImages = TestImages_;
+            TestLabels = TestLabels_;
+        }
 
         public static IEnumerable<Image> ReadTrainingData()
         {
