@@ -29,7 +29,7 @@ namespace MNISTForm
         public double[,] ps = new double[28, 28];
 
         public int scalar = 4;
-        public int trainingAmount = 10000;
+        public int trainingAmount = 60000;
 
         public bool thumbnail = false;
         public bool emnist = true;
@@ -95,7 +95,7 @@ namespace MNISTForm
                 {
                     label3.Text = $"{index} / {TrainingAmount}";
                     label3.Refresh();
-                    progressBar1.Value = Int32.Parse(((double)index / (double)TrainingAmount * 100.0).ToString());
+                    progressBar1.Value = Convert.ToInt32((double)index / (double)TrainingAmount * 100.0);
                     progressBar1.Update();
                 }
                 if (++count == TrainingAmount) break;
@@ -215,16 +215,18 @@ namespace MNISTForm
             {
                 Console.WriteLine("Drawn!");
                 id.DrawFrame(ps, e, scalar, emnist);
-                //return;
+                return;
             }
 
 
             if (isTraining)
             {
+                Console.WriteLine("Train");
                 TrainData(trainingAmount, e);
             }
             else
             {
+                Console.WriteLine("Test");
                 TestData(e);
             }
         }
@@ -236,6 +238,7 @@ namespace MNISTForm
 
         public void button2_Click(object sender, EventArgs e)
         {
+            isTraining = true;
             button2.Enabled = false;
             start = true;
             panel1.Refresh();
@@ -277,6 +280,7 @@ namespace MNISTForm
 
         private void changeToMNISTToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            nn = new NeuralNetwork(784, 16, 10);
             emnist = false;
             MNISTReader.SetType("mnist/train-images.idx3-ubyte", "mnist/train-labels.idx1-ubyte", "mnist/t10k-images.idx3-ubyte", "mnist/t10k-labels.idx1-ubyte");
             testing = MNISTReader.ReadTestData().ToList();
